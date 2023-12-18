@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Works</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Bellefair&family=Bodoni+Moda:opsz@6..96&family=Londrina+Outline&family=Nixie+One&family=Playfair+Display&family=Playfair+Display+SC&family=Press+Start+2P&family=Sorts+Mill+Goudy&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .carousel {
+            margin-top: 50px;
+        }
+
+        .btn-outline-primary {
+            color: #050505; 
+            border-color: #080808;
+        }
+
+        .btn-outline-primary:hover {
+            color: #FFFFFF; 
+            background-color: #FFA500;
+        }
+
+        .nav-link {
+            color: black !important; 
+        }
+        .max-height-override {
+             max-height: 300px; /* Adjust the value as needed */
+          }
+
+
+        .contact-info {
+            display: flex;
+            justify-content: end;
+            height: 25px;
+            font-family: 'Sorts Mill Goudy', serif;
+            font-weight: bolder;
+            font-size: 15px;
+            margin-top: -20px;
+            gap: 10px;
+        }
+
+        .contact-info p a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .logo img {
+            max-width: 100px; 
+            height: auto;
+        }
+
+        .logotext {
+            font-family: 'Bodoni Moda', serif;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+
+        span {
+            color: #FFA500;
+        }
+
+        .nav li a:hover {
+            color: #FFA500;
+            background-color: #FFFFFF;
+            border-radius: 0.25rem;
+            box-shadow: 0 0 0.25rem #FFA500 ;
+        }
+
+        .nav li a {
+            font-family: 'Sorts Mill Goudy', serif;
+        }
+        
+        .carousel-inner {
+            text-align: center;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            border: 2px solid #FFA500;;
+            /* Border color */
+            border-radius: 0;
+            /* Remove border radius */
+            color: #333;
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            /* Make the input and textarea full width */
+            transition: border-color 0.3s ease;
+            /* Add a smooth border color transition */
+        }
+        #email{
+            margin:90px;
+        }
+        .form-control:focus {
+            border-color: #FFA500;
+            /* Border color when focused */
+            outline: none;
+            /* Remove the default outline */
+        }
+
+        /* Textarea Styles */
+        textarea.form-control {
+            resize: vertical;
+            /* Allow vertical resizing */
+        }
+        .footer {
+    background-color: #FFA500; /* Orange background color */
+    color: #fff; /* Text color */
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.footer-links ul {
+    text-align: left;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #333; /* Change to your desired hover color */
+}
+
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #333; /* Change to your desired hover color */
+}
+        /* Adjust styling for input and textarea as needed */
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+                /* Optional: Add a slight vertical translation */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply the animation to elements with the 'fade-in' class */
+        .fade-in {
+            animation: fade-in 1s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="firstsection">
+        <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-start justify-content-md-between py-3 mb-4 border-bottom ">
+                <div class="logotext">Classic Sign Fab - <span>
+                    Works
+                </span> </div>
+                <div class="col-md-3 mb-2 mb-md-0">
+                    <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                        <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li><a href="index.html" class="nav-link px-2">Home</a></li>
+                    <li><a href="About.html" class="nav-link px-2">About</a></li>
+                    <li><a href="#" class="nav-link px-2">Contact-us</a></li>
+                </ul>
+            </header>
+        </div>
+    </section>
+
+    <section>
+        <div id="myCarousel" class="carousel slide mb-6 fade-in" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            </div>
+            <div class="carousel-inner">
+                
+                <div class="carousel-item">
+                    <img src="/image3.jpg" class="d-block w-100 max-height-override" alt="Image 3">
+                    
+                </div>
+                <div class="carousel-item active">
+                    <img src="/image1.jpg" class="d-block w-100 max-height-override" alt="Image 1">
+                    
+                </div>
+                <div class="carousel-item ">
+                    <img src="/image2.jpg" class="d-block w-100 max-height-override" alt="Image 2">
+                   
+                </div>
+               
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Section 1: Crafting Stunning Kiosks -->
+    <section>
+        <div class="container col-xxl-8 px-4 py-5 fade-in">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-12 col-lg-6" style="font-family: 'Bodoni Moda', serif; text-align: center; font-weight: bolder; margin-top: 40px;">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                      Crafting <span>Stunning</span> Kiosks
+                    </h1>
+                    <p>
+                      At Classic Sign Fab, we excel in crafting kiosks that not only meet your practical needs but also leave a lasting impression on your audience. Our dedicated team of designers and engineers is committed to pushing the boundaries of innovation to create kiosks that captivate and engage your customers.
+                    </p>
+                    <p>
+                      We believe that a kiosk is more than a functional device; it's a medium of interaction, a storytelling tool, and a visual statement. Our kiosks are designed to seamlessly blend into any environment while standing out with their unique and captivating design. Whether it's a retail space, corporate lobby, outdoor setting, or any other location, our kiosks elevate the overall experience and leave a positive impact.
+                    </p>
+                    <p>
+                      When you choose Classic Sign Fab, you're choosing a partner dedicated to delivering cutting-edge kiosk solutions that align with your brand identity and vision. We pride ourselves on providing not just kiosks but exceptional experiences, helping you enhance your business, engage your customers, and make a statement that lasts.
+                    </p>
+                  </div>
+                  
+                <div class="col-12 col-lg-6">
+                    <img src="/KIOSK.jpg" style="box-shadow: 0 0 20px rgba(255, 165, 0, 0.7); width: 600px; height: 600px;" class="d-block mx-lg-auto img-fluid" alt="Image 1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Section 2: Expert Signage Solutions -->
+
+<section>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-12 col-lg-6" style="font-family: 'Bodoni Moda', serif; text-align: center; font-weight: bolder; margin-top: 40px;">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                  Comprehensive <span>Signage Solutions</span> for Every Need
+                </h1>
+                <p>
+                  At Classic Sign Fab, we are your one-stop destination for all your indoor and outdoor signage requirements. We offer a diverse range of signage solutions that cater to your specific needs and vision. Our commitment to excellence is reflected in our wide array of offerings, including illuminated signs, digital displays, and custom designs that set your brand apart.
+                </p>
+                <p>
+                  Whether you're looking to make a bold statement with vibrant, eye-catching illuminated signs or need cutting-edge digital displays to convey your message, we've got you covered. Our team of skilled artisans and designers works closely with you to bring your signage ideas to life, ensuring they align with your brand identity and vision.
+                </p>
+                <p>
+                  We understand that effective signage is a powerful communication tool. It's not just about showcasing your brand but also creating an immersive and memorable experience for your audience. When you choose Classic Sign Fab, you're choosing a partner dedicated to delivering comprehensive signage solutions that leave a lasting impact.
+                </p>
+              </div>
+              
+            <div class="col-12 col-lg-6">
+                <img src="/signage1.jpg" style="box-shadow: 0 0 20px rgba(255, 165, 0, 0.7); width: 500px; height: 500px;" class="d-block mx-lg-auto img-fluid" alt="Image 2" width="400" loading="lazy">
+            </div>
+           
+           
+        </div>
+    </div>
+</section>
+
+<!-- Section 3: Crafting Unique Spaces -->
+<section>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-12 col-lg-6" style="font-family: 'Bodoni Moda', serif; text-align: center; font-weight: bolder; margin-top: 40px;">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                  Elevating <span>Indoor Spaces </span> with Timeless Elegance
+                </h1>
+                <p>
+                  At Classic Sign Fab, we're dedicated to transforming indoor spaces into captivating environments that leave a lasting impression. We understand the power of design and its ability to elevate the ambiance of your space. Our expertise lies in combining timeless elegance with modern innovation to create interiors that tell a unique story.
+                </p>
+                <p>
+                  Whether it's a corporate office, a retail store, or any indoor setting, our team of skilled artisans and designers collaborates closely with you to bring your vision to life. We believe that indoor spaces are a canvas for creativity, and our designs are the brushstrokes that make your narrative come to life.
+                </p>
+                <p>
+                  When you choose Classic Sign Fab to elevate your indoor spaces, you're choosing a partner committed to delivering sophisticated and functional interiors. Our designs are more than aesthetics; they're experiences that engage, inspire, and leave an indelible mark on all who enter your space.
+                </p>
+              </div>
+              
+              
+            <div class="col-12 col-lg-6">
+                <img src="/aanvi.jpg" style=" box-shadow: 0 0 20px rgba(255, 165, 0, 0.7); width: 500px; height: 500px;"class="d-block mx-lg-auto img-fluid" alt="Image 3" width="700" height="500" loading="lazy">
+            </div>
+           
+           
+        </div>
+    </div>
+</section>
+
+
+<!-- Section 4: High-Quality Printing Services -->
+<section>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-12 col-lg-6" style="font-family: 'Bodoni Moda', serif; text-align: center; font-weight: bolder; margin-top: 40px;">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                  High-Quality <span>Printing </span>Services
+                </h1>
+                <p>
+                  At Classic Sign Fab, our commitment to excellence extends to our high-quality printing services. We take pride in offering top-notch printing solutions that bring your creative ideas to life. Whether you need business cards that make a memorable first impression or large-scale banners that grab attention, our team ensures exceptional print quality and precision in every project we undertake.
+                </p>
+                <p>
+                  We understand that the quality of your printed materials reflects on your brand and message. That's why we invest in cutting-edge printing technology and employ a team of experts who pay meticulous attention to detail. We're not just a printing service; we're your partner in making a visual impact and telling your story effectively through printed materials.
+                </p>
+                <p>
+                  When you choose Classic Sign Fab for your printing needs, you're choosing a partner dedicated to delivering high-quality printed materials that set you apart. Whether it's a small run of promotional materials or a large-scale marketing campaign, our commitment to excellence remains unwavering.
+                </p>
+              </div>
+              
+            <div class="col-12 col-lg-6">
+                <img src="/print.jpg" style=" box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);width: 500px; height: 500px;"class="d-block mx-lg-auto img-fluid" alt="Printing Image" width="700" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 5: Custom Vendor Racks -->
+<section>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-12 col-lg-6" style="font-family: 'Bodoni Moda', serif; text-align: center; font-weight: bolder; margin-top: 40px;">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                  Custom <span>Vendor Racks</span> for Your Unique Display Needs
+                </h1>
+                <p>
+                  At Classic Sign Fab, we understand the significance of effective product displays. Our custom vendor racks are meticulously tailored to meet your unique needs, optimizing space and enhancing the presentation of your products. We specialize in designing and building vendor racks that not only showcase your products effectively but also make a statement of style and innovation.
+                </p>
+                <p>
+                  We believe that your product displays should be as unique as your brand. That's why our dedicated team of designers and engineers works closely with you to create custom racks that align with your vision. We understand that the right display can make a lasting impact on your customers and elevate your products in the market.
+                </p>
+                <p>
+                  When you choose Classic Sign Fab for your custom vendor racks, you're choosing a partner dedicated to making your brand and products stand out. Whether it's in a retail store, trade show, or any other setting, our custom racks are designed to captivate attention and maximize the impact of your product display.
+                </p>
+              </div>
+              
+            <div class="col-12 col-lg-6">
+                <img src="/vendorracks.jpg" style=" box-shadow: 0 0 20px rgba(255, 165, 0, 0.7); width: 500px; height: 500px;" class="d-block mx-lg-auto img-fluid" alt="Vendor Racks Image" width="700" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 6: Effective Advertisement Solutions -->
+<section>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-12 col-lg-6" style="font-family: 'Bodoni Moda', serif; text-align: center; font-weight: bolder; margin-top: 40px;">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                  Effective <span>Advertisement Solutions</span> for Your Brand
+                </h1>
+                <p>
+                  At Classic Sign Fab, we understand the importance of making your brand shine in the competitive market. Our advertisement services are crafted to create compelling ad campaigns that not only grab attention but also drive tangible results. We specialize in maximizing your brand's reach through strategic advertising solutions that resonate with your target audience.
+                </p>
+                <p>
+                  We believe that effective advertising is a blend of creativity, strategy, and precision. Our team of experts works closely with you to develop campaigns that communicate your brand's unique value and message. Whether it's print, digital, or any other medium, our goal is to help your brand stand out and succeed.
+                </p>
+                <p>
+                  When you choose Classic Sign Fab for your advertising needs, you're choosing a partner dedicated to making your brand shine. Our solutions are more than just ads; they're pathways to connect with your audience, drive results, and achieve your business goals.
+                </p>
+              </div>
+              
+            <div class="col-12 col-lg-6">
+                <img src="/Advertisement.jpg" style=" box-shadow: 0 0 20px rgba(255, 165, 0, 0.7); width: 500px; height: 500px;"class="d-block mx-lg-auto img-fluid" alt="Advertisement Image" width="700" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="email"  style="font-family: 'Bodoni Moda', serif; text-align: start; font-weight: bolder;">
+        <div class="headingforservices"
+            style="font-family:'Bodoni Moda', serif; color: #050505;font-weight:bolder; text-align: center;">
+            <span class="fs-2 text-body-emphasis">Contact <span>Us. </span></span>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Mail id">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Here..."></textarea>
+        </div>
+    </section>
+   
+    <footer class="footer">
+        <div class="container"  style="font-family: 'Bodoni Moda', serif; text-align: center; font-weight: bolder; margin-top: 40px;">
+            
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/LOGO.png" alt="Logo" >
+                    <h1>Classic Sign Fab</h1>
+                </div>
+                <div class="footer-disclaimer" style="margin-left: -20px;">
+                    <p>&copy; 2023 Your Company. All rights reserved.</p>
+                    <p>Privacy Policy | Terms of Service</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+   
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link
+  href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Bellefair&family=Bodoni+Moda:opsz@6..96&family=Londrina+Outline&family=Nixie+One&family=Playfair+Display&family=Playfair+Display+SC&family=Press+Start+2P&family=Sorts+Mill+Goudy&family=Staatliches&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"
+></script>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+</head>
+<style>
+     .btn-outline-primary {
+        color: #050505;
+        border-color: #080808;
+      }
+
+      .btn-outline-primary:hover {
+        color: #ffffff;
+        background-color: #ffa500;
+      }
+
+      .nav-link {
+        color: black !important;
+      }
+      .max-height-override {
+        max-height: 300px; /* Adjust the value as needed */
+      }
+      .logo img {
+        max-width: 100px;
+        height: auto;
+      }
+
+      .logotext {
+        font-family: "Bodoni Moda", serif;
+        font-weight: bolder;
+        font-size: xx-large;
+      }
+
+      span {
+        color: #ffa500;
+      }
+
+      .nav li a:hover {
+        color: #ffa500;
+        background-color: #ffffff;
+        border-radius: 0.25rem;
+        box-shadow: 0 0 0.25rem #ffa500;
+      }
+
+      .nav li a {
+        font-family: "Sorts Mill Goudy", serif;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        /* text-align: center; */
+      }
+
+      .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .footer-logo img {
+        max-width: 100px;
+      }
+
+      .footer-logo h1 {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+
+      .footer-links ul {
+        text-align: left;
+      }
+
+      .footer-links ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-links ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-links ul li a:hover {
+        color: #333; /* Change to your desired hover color */
+      }
+
+      .footer-contact h3,
+      .footer-social h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .footer-contact p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .footer {
+        background-color: #ffa500; /* Orange background color */
+        color: #fff; /* Text color */
+        padding: 50px 0;
+      }
+
+      .footer-social a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        margin: 0 10px;
+        transition: color 0.3s;
+      }
+
+      .footer-social a:hover {
+        color: #333; /* Change to your desired hover color */
+      }
+      /* Adjust styling for input and textarea as needed */
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+          /* Optional: Add a slight vertical translation */
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Apply the animation to elements with the 'fade-in' class */
+      .fade-in {
+        animation: fade-in 1s ease-in-out;
+      }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+</style>
+<body>
+ 
+        <section class="firstsection">
+          <div class="container">
+            <header
+              class="d-flex flex-wrap align-items-center justify-content-start justify-content-md-between py-3 mb-4 border-bottom"
+            >
+              <div class="logotext">Classic Sign Fab - <span> Orders</span></div>
+              <div class="col-md-3 mb-2 mb-md-0">
+                <a
+                  href="/"
+                  class="d-inline-flex link-body-emphasis text-decoration-none"
+                >
+                  <svg
+                    class="bi"
+                    width="40"
+                    height="32"
+                    role="img"
+                    aria-label="Bootstrap"
+                  >
+                    <use xlink:href="#bootstrap"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul class="nav">
+                <li><a href="/" class="nav-link px-2">Home</a></li>
+                <li><a href="/Our-Works" class="nav-link px-2">Our Works</a></li>
+                <li><a href="/Contact-Us" class="nav-link px-2">Contact-us</a></li>
+              </ul>
+            </header>
+          </div>
+        </section>
+ <div class="container" style="height: auto; width: 100%; display: flex; justify-content: center;"> 
+  <div class="col-md-7 col-lg-8" >
+    <div class="col-12">
+        <%- message %>
+       </div>
+    <h4 class="mb-3">Order details</h4>
+    <form class="needs-validation" method="post" action="/submitkiosk">
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="firstName" name="name" value="" required="" fdprocessedid="o58b8f">
+          <div class="invalid-feedback">
+            Valid first name is required.
+          </div>
+        </div>
+    
+        <div class="col-sm-6">
+          <label for="Phonenumber" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="Phonenumber" name="phoneNumber" placeholder="" value="" required="" fdprocessedid="2k1lg">
+        </div>
+    
+        <div class="col-12">
+          <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" fdprocessedid="88qf8m">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+    
+        <div class="col-12">
+          <label for="address" class="form-label">Address</label>
+          <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St" required="" fdprocessedid="r6xib8">
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <label for="interior" class="form-label">Are you looking for Internal KIOSKs or the External ones?</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="interiorExterior" id="interior" value="Interior">
+            <label class="form-check-label" for="interior">Interior</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="interiorExterior" id="exterior" value="Exterior">
+            <label class="form-check-label" for="exterior">Exterior</label>
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <label for="length" class="form-label">Length</label>
+          <input type="text" class="form-control" id="length" name="length1" placeholder="Enter length" fdprocessedid="88qf8m">
+        </div>
+        
+        <div class="col-12">
+          <label for="width" class="form-label">Width</label>
+          <input type="text" class="form-control" id="width" name="width" placeholder="Enter width" fdprocessedid="88qf8m">
+        </div>
+        
+        <div class="col-12">
+          <label for="description" class="form-label">Description</label>
+          <textarea class="form-control" id="description" name="description" placeholder="Enter description" fdprocessedid="88qf8m"></textarea>
+        </div>
+      </div>
+    
+      <hr class="my-4">
+    
+      <button class="w-100 btn btn-primary btn-lg" type="submit" fdprocessedid="4j8hn">Continue to checkout</button>
+    </form>
+    
+  </div>
+</div>  
+<br><br>
+
+<section id="email" >
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="/working.gif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"  style="font-family: 'Bodoni Moda', serif; text-align: center; font-weight: bolder;">Contact-Us</h1>
+        <p class="lead">Please feel free to contact us for any queries or to request a quote. Our team is ready to assist you in achieving your goals. We specialize in designing and customizing responsive mobile-first sites using Bootstrap, the world's most popular front-end open source toolkit. Benefit from our expertise with Sass variables, mixins, a responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <a href="/Contact-Us" class="btn btn-outline-primary me-2">Contact-Us ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container1">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item" style="margin:30px;"><a href="/" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item" style="margin:30px;"><a href="/About-Us" class="nav-link px-2 text-body-secondary">About-Us</a></li>
+      <li class="nav-item" style="margin:30px;"><a href="/Contact-Us" class="nav-link px-2 text-body-secondary">Contact-Us</a></li>
+      <li class="nav-item" style="margin:30px;"><a href="/Our-Works" class="nav-link px-2 text-body-secondary">Our works</a></li>
+      <li class="nav-item" style="margin:30px;"><a href="/KIOSKS" class="nav-link px-2 text-body-secondary">KIOSKs</a></li>
+      <li class="nav-item" style="margin:30px;"><a href="/Signage" class="nav-link px-2 text-body-secondary">Signage</a></li>
+      <li class="nav-item" style="margin:30px;"><a href="/Vendorracks" class="nav-link px-2 text-body-secondary">Vendor-Racks</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+  </footer>
+</div>
+</div>
+   
+</body>
+</html>
